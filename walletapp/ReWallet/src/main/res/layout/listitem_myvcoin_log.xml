@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="20dip"
+	android:paddingRight="20dip"
+	android:orientation="horizontal" >
+	<LinearLayout 
+		android:layout_width="55dip"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top"
+		android:paddingRight="10dip">
+		<TextView 
+			android:id="@+id/listItemVCoinLog_tvInOut"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/global_Text_SubTitle"
+			android:text="out"/>
+	</LinearLayout>
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView 
+				android:id="@+id/listItemVCoinLog_tvDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/global_Text_Title"
+				android:text="yyyy/mm/dd 00:00"/>
+			<TextView 
+				android:id="@+id/listItemVCoinLog_tvAcount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:textColor="@color/global_Text_Title"
+				android:textStyle="bold"
+				android:text="amount"/>
+		</RelativeLayout>
+		<TextView 
+			android:id="@+id/listItemVCoinLog_tvDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_marginRight="10dip"
+			android:textColor="@color/global_Text_SubTitle"
+			android:text="descriptiondescriptiondescriptiondescriptiondescriptiondescription"/>
+	</LinearLayout>
+
+</LinearLayout>

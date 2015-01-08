@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="btn_highlightReversal_default_bg">#FF6E13</color>
+	<color name="btn_highlightReversal_default_NumberTextColor">#FFFFFF</color>
+	<color name="btn_highlightReversal_pressed_bg">#FFFFFF</color>
+	<color name="btn_highlightReversal_pressed_NumberTextColor">#FF6E13</color>
+	<color name="global_btnTransparent_default">#00000000</color>
+	<color name="global_btnTransparent_disable">#50000000</color>
+	<color name="global_cutline">#FF914F</color>
+	<color name="global_bodyTextColor_highLight">#FF6E12</color>
+	<color name="global_bodyTextColor_default">#5d5d5d</color>
+	<color name="global_bodyTextColor_subDefault">#4d4d4d</color>
+	<color name="global_titleText">#404040</color>
+	<color name="searchBar_bg_default">#FF6E11</color>
+	<color name="searchBar_bg_active">#000000</color>
+	<color name="global_bg_white">#FFFFFF</color>
+	<color name="capture_scanQRCode_textColor">#FFC800</color>
+	<color name="btn_twoBorder_orange">#FF6E12</color>
+	<color name="loginDialogBackgroud">#00000000</color>
+	<color name="redemptionHistory_tab_selected_bg">#462446</color>
+	<color name="redemptionHistory_tab_selected_textColor">#FFFFFF</color>
+	<color name="redemptionHistory_tab_unSelected_bg">#301630</color>
+	<color name="redemptionHistory_tab_unSelected_textColor">#7E5F7F</color>
+	<color name="redemptionHistory_list_title_textColor">#404040</color>
+	<color name="redemptionHistory_list_vendor_textColor">#F29C41</color>
+	<color name="redemptionHistory_list_expDate_textColor">#C4C4C4</color>
+	<color name="redemptionHistoryDetail_white_textColor">#ffffff</color>
+	<color name="redemptionHistoryDetail_orange_textColor">#EC6B33</color>
+	<color name="rewardDetail_redeemButtonColor">#FF6E12</color>
+
+	<!-- new design color -->
+	<color name="global_navigator_bg">#301630</color>
+	<color name="global_activity_bg">#301630</color>
+	<color name="global_searchbar_bg">#3C213D</color>
+	<color name="global_Text_Title">#FFFFFF</color>
+	<color name="global_Text_SubTitle">#7E5F7F</color>
+	<color name="myVcoin_bottomMenu_Bg">#462446</color>
+	<color name="appList_listitem_left_bg">#613763</color>
+	<color name="appList_listitem_right_bg">#462446</color>
+	<color name="global_bottomMenu_bg">#653F66</color>
+	<color name="global_cutline_bg">#3F1F3F</color>
+	<color name="myRewards_tabMenu_Bg">#301630</color>
+	<color name="myRewards_tabMenu_Bg_highlight">#462446</color>
+	<color name="category_reward_color_1">#552D56</color>
+	<color name="category_reward_color_2">#673553</color>
+	<color name="category_reward_color_3">#B05F6D</color>
+	<color name="category_reward_color_4">#DE8275</color>
+	<color name="category_reward_color_5">#FFAB88</color>
+	<color name="category_reward_color_6">#FF6C54</color>
+	<color name="category_reward_color_7">#FFC153</color>
+	<color name="category_reward_color_8">#FFD453</color>
+	<color name="category_app_color_1">#552D56</color>
+	<color name="category_app_color_2">#673553</color>
+	<color name="category_app_color_3">#FFAB88</color>
+	<color name="category_app_color_4">#FF6C54</color>
+	<color name="category_app_color_5">#FFC153</color>
+	<color name="category_app_color_6">#FFD453</color>
+	<color name="category_app_color_7">#B05F6D</color>
+	<color name="category_app_color_8">#DE8275</color>
+	<!-- end new design color -->
+
+	<color name="bg_color">#EDEDED</color>
+	<color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="help_button_view">#ffcccccc</color>
+	<color name="help_view">#ff404040</color>
+	<color name="possible_result_points">#c0ffff00</color>
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c000ff00</color>
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="sbc_header_text">#ff808080</color>
+	<color name="sbc_header_view">#ffffffff</color>
+	<color name="sbc_list_item">#fffff0e0</color>
+	<color name="sbc_layout_view">#ffffffff</color>
+	<color name="sbc_page_number_text">#ff000000</color>
+	<color name="sbc_snippet_text">#ff4b4b4b</color>
+	<color name="share_text">#ff000000</color>
+	<color name="share_view">#ffffffff</color>
+	<color name="status_view">#50000000</color>
+	<color name="status_text">#ffffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="header">#58567D</color>
+	<color name="grgray">#686868</color>
+	<color name="black_overlay">#66000000</color>
+
+</resources>
