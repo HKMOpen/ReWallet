@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MyRewardClaimProcessResultActivity" >
+
+	<LinearLayout 
+		android:id="@+id/myRewardClaimProcessResult_layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/login_bottombar_height"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true">
+		<Button 
+			android:id="@+id/myRewardClaimProcessResult_btnContinue"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/instructionsActivity_ok"
+			android:background="@color/global_bottomMenu_bg"
+			android:textColor="@color/global_Text_Title"/>
+	</LinearLayout>
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/myRewardClaimProcessResult_layout_bottom"
+		android:background="@color/global_activity_bg">
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="20dip"
+			android:paddingLeft="15dip"
+			android:paddingRight="15dip"
+			android:paddingTop="30dip"
+			android:paddingBottom="15dip"
+			android:background="@drawable/textbox_stroke_write"
+			android:orientation="vertical">
+			<TextView 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/myRewardClaimProcessResult_tvNotice"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="18sp"/>
+			<TextView 
+				android:id="@+id/myRewardClaimProcessResult_tvContent"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dip"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="18sp"
+				android:textStyle="bold"/>
+		</LinearLayout>
+	</RelativeLayout>
+	
+
+</RelativeLayout>

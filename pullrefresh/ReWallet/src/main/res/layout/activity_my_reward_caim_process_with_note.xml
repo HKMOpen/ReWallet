@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MyRewardCaimProcessWithNoteActivity" >
+
+	<LinearLayout 
+		android:id="@+id/myRewardClaimProcess_layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/login_bottombar_height"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true">
+		<Button 
+			android:id="@+id/myRewardClaimProcess_btnOK"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/instructionsActivity_ok"
+			android:background="@color/global_bottomMenu_bg"
+			android:textColor="@color/global_Text_Title"/>
+	</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/myRewardClaimProcess_layout_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@id/myRewardClaimProcess_layout_bottom"
+			android:paddingLeft="15dip"
+			android:paddingRight="15dip"
+			android:orientation="vertical" 
+			android:background="@color/global_activity_bg">
+			<ImageView 
+				android:id="@+id/myRewardClaimProcess_imgTop"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				/>
+			<TextView 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/myRewardClaimProcess_noteNotice"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="18sp"
+				android:layout_marginTop="10dip"/>
+			<EditText 
+				android:id="@+id/myRewardClaimProcess_edNote"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dip"
+				android:background="@drawable/textbox_stroke_write"
+				android:layout_marginTop="10dip"/>
+		</LinearLayout>
+
+
+</RelativeLayout>

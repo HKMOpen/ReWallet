@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MyCouponsActivity" 
+	android:background="@color/global_activity_bg"
+	android:id="@+id/myCoupon_layout">
+
+	<ListView 
+		android:id="@+id/myCoupon_lvCoupon"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:dividerHeight="3dip"
+		android:divider="#00000000"/>
+
+</RelativeLayout>

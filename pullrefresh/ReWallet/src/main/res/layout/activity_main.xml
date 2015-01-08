@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity" 
+	android:background="@color/global_activity_bg">
+
+	<!-- 
+	<com.imusic.vcoinapp.widgets.SearchBar
+		android:id="@+id/layout_searchBar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/searchBar_height"
+		android:layout_alignParentTop="true"
+		/>
+	<FrameLayout 
+		android:id="@+id/layout_mainFilterContent"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/layout_searchBar"
+		android:visibility="gone"/>
+		 -->
+	<android.support.v4.view.ViewPager
+		android:id="@+id/main_viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+<!-- 
+	<ImageButton 
+		android:id="@+id/main_imgbtnMyVcoin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_vcoin"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		android:visibility="gone"/>
+	<ImageButton 
+		android:id="@+id/main_imgbtnMyProfile"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_myprofile"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		android:visibility="gone"/>
+	 -->
+
+</RelativeLayout>

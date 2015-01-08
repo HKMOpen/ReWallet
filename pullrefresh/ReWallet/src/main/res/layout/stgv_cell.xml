@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reward_gridview_cell_layout"
+        >
+
+        	<ImageView
+        		android:id="@+id/reward_gridview_cell_imgContent"
+        		android:layout_width="match_parent"
+        		android:layout_height="100dip"
+        		android:background="#ddd"
+        		android:scaleType="fitXY" />
+        	<LinearLayout
+        		android:id="@+id/reward_gridview_cell_layout_leftMargin"
+        		android:layout_width="6dip"
+        		android:layout_height="100dip"
+        		android:orientation="horizontal"
+        		android:layout_alignParentBottom="true"
+        		android:background="#B05F6D"/>
+
+        	<LinearLayout 
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical"
+        		android:layout_alignParentBottom="true"
+        		android:layout_marginLeft="6dip">
+        		<RelativeLayout
+        			android:id="@+id/reward_gridview_cell_layout_category"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:minWidth="100dip"
+        			android:background="#B05F6D"
+        			android:paddingTop="1dip"
+        			android:paddingLeft="3dip"
+        			android:paddingRight="3dip"
+        			android:paddingBottom="1dip" >
+        			<TextView
+        				android:id="@+id/reward_gridview_cell_tvCategory"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_centerInParent="true"
+        				android:singleLine="true"
+        				android:ellipsize="end"
+        				android:textColor="@color/global_Text_Title"
+        				android:textSize="14sp"
+        				android:textStyle="bold" />
+        		</RelativeLayout>
+
+        	<RelativeLayout
+        		android:id="@+id/reward_gridview_cell_layout_title"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:paddingTop="3dip"
+        		android:paddingBottom="3dip"
+        		android:background="#50000000" >
+        		<ImageView
+        			android:id="@+id/reward_gridview_cell_imgCoin"
+        			android:layout_width="20dip"
+        			android:layout_height="20dip"
+        			android:layout_alignParentRight="true"
+        			android:layout_centerVertical="true"
+        			android:layout_marginLeft="4dip"
+        			android:layout_marginRight="5dip"
+        			android:src="@drawable/rewardchannel_vcoin" />
+        		<TextView
+        			android:id="@+id/reward_gridview_cell_tvCoinCount"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerVertical="true"
+        			android:layout_toLeftOf="@id/reward_gridview_cell_imgCoin"
+        			android:textColor="@color/global_Text_Title"
+        			android:textSize="20sp"
+        			android:textStyle="bold" />
+        		<TextView
+        			android:id="@+id/reward_gridview_cell_tvTitle"
+        			android:layout_width="match_parent"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="5dip"
+        			android:layout_toLeftOf="@id/reward_gridview_cell_tvCoinCount"
+        			android:background="#00000000"
+        			android:ellipsize="end"
+        			android:gravity="left|top"
+        			android:lines="3"
+        			android:textColor="@color/global_Text_Title"
+        			android:textSize="11sp"
+        			android:textStyle="bold" />
+        	</RelativeLayout>
+        		
+        		
+        	</LinearLayout>
+    
+    
+</RelativeLayout>

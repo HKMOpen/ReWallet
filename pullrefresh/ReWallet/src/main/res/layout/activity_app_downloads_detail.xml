@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:id="@+id/appDetail_layout" >
+	
+	<Button
+			android:id="@+id/appDownloads_btnDownload"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/login_bottombar_height"
+			android:textStyle="bold"
+			android:layout_alignParentBottom="true"
+			android:text="@string/appDownloadsDetaillActivity_donwload"
+			android:background="@color/global_bottomMenu_bg"
+			android:textColor="@color/global_Text_Title"
+			/>
+	<include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/appDownloads_btnDownload"
+        layout="@layout/activity_scrollcontent_app_downloads_detail"/>
+<!-- 
+	<ImageButton 
+		android:id="@+id/appDetail_imgbtnMyVcoin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_vcoin"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		/>
+	<ImageButton 
+		android:id="@+id/appDetail_imgbtnMyProfile"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_myprofile"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		/>
+	 -->
+</RelativeLayout>

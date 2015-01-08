@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" 
+	android:background="@drawable/btn_orange_two_border">
+	<TextView 
+		android:id="@+id/btnReversalHighlight_tvNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="5dip"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:textColor="@color/btn_highlightReversal_pressed_NumberTextColor"
+		android:textSize="10sp"
+		android:text="0"/>
+	
+	<LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="10dip">
+		<ImageView 
+		android:id="@+id/btnReversalHighlight_imgIcon"
+		android:layout_width="30dip"
+		android:layout_height="30dip"
+		android:layout_gravity="center_vertical"/>
+		<TextView 
+		android:id="@+id/btnReversalHighlight_tvButtonName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	
+		android:layout_marginLeft="15dip"
+		android:text="buttonName"
+		android:textColor="@color/btn_highlightReversal_pressed_NumberTextColor"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:layout_gravity="center_vertical"/>
+	</LinearLayout>
+	<Button 
+		android:id="@+id/btnReversalHighlight_btn"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#00000000"/>
+
+</RelativeLayout>

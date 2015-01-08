@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:id="@+id/appsFragment_layout"
+	android:background="@color/global_activity_bg">
+
+	<com.imusic.rewallet.widgets.SearchBar
+		android:id="@+id/layout_searchBar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/searchBar_height"
+		android:layout_alignParentTop="true"
+		/>
+	<FrameLayout 
+		android:id="@+id/layout_mainFilterContent"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/layout_searchBar"
+		android:visibility="gone"/>
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshVerticalScrollView
+		android:id="@+id/appsFragment_pull_refresh_scrollview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/layout_searchBar">
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout 
+				android:id="@+id/appsFragment_layout_imageSlider"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone">
+				<com.imusic.rewallet.widgets.ImageSlider
+				android:id="@+id/appsFragment_imageSlider"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+			</LinearLayout>
+			
+			<com.imusic.rewallet.widgets.ExpandableHeightListView
+				android:id="@+id/appsFragment_listView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:divider="#00000000"
+				android:dividerHeight="1.5dip"/>
+		</LinearLayout>
+		
+	</com.handmark.pulltorefresh.library.PullToRefreshVerticalScrollView>
+
+</RelativeLayout>

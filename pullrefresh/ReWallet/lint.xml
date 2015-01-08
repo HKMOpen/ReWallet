@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/imusic/vcoinapp/fragments/DataBaseFragment.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+</lint>

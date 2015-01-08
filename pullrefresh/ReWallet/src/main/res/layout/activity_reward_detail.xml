@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:id="@+id/rewardDetail_layout">
+	
+	<com.imusic.rewallet.widgets.RewardDetailVideoPlayer
+			android:id="@+id/rewardDetail_videoplayer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	
+	<RelativeLayout 
+		android:id="@+id/register_layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/login_bottombar_height"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true">
+		<Button 
+		android:id="@+id/rewardDetail_btnRedeem"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:text="@string/rewardDetaillActivity_Redeem"
+		android:textColor="@color/global_Text_Title"
+		android:background="@color/global_bottomMenu_bg"
+		android:textStyle="bold"
+		android:textSize="20sp"/>
+		<View 
+			android:id="@+id/rewardDetail_redeemCover"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#75000000"/>
+	</RelativeLayout>
+	
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/register_layout_bottom"
+		android:layout_below="@id/rewardDetail_videoplayer"
+		android:background="@color/global_activity_bg">
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<RelativeLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dip">
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+					<TextView
+					android:id="@+id/rewardDetail_tvCoinCount"
+					android:layout_width="wrap_content"
+					android:layout_height="30dip"
+					android:gravity="center_vertical"
+					android:textColor="@color/global_Text_Title"
+					android:textSize="20sp"/>
+					<ImageView
+					android:id="@+id/rewardDetail_imgCoin"
+					android:layout_width="30dip"
+					android:layout_height="30dip"
+					android:layout_marginLeft="6dip"
+					android:src="@drawable/rewardchannel_vcoin" />
+				</LinearLayout>
+			</RelativeLayout>
+			
+			<TextView
+				android:id="@+id/rewardDetail_tvMainDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/rewardDetailactivity_Text_margin"
+				android:layout_marginRight="@dimen/rewardDetailactivity_Text_margin"
+				android:textColor="@color/global_Text_Title" />
+		</LinearLayout>
+	</ScrollView>
+	<!-- 
+	<include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_scrollcontent_reward_detail"/>
+
+	
+	<ImageButton 
+		android:id="@+id/rewardDetail_imgbtnMyVcoin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_vcoin"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		/>
+	<ImageButton 
+		android:id="@+id/rewardDetail_imgbtnMyProfile"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/overlaybutton_myprofile"
+		android:background="#00000000"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="@dimen/main_ImageBtnTool_margin_left"
+		android:layout_marginBottom="@dimen/main_ImageBtnTool_margin_bottom"
+		/>
+		 -->
+
+</RelativeLayout>

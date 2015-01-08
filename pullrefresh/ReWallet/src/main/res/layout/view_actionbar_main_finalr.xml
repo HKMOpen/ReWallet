@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/global_navigator_bg" >
+	
+	<TextView
+		android:id="@+id/MainActionbar_tvCenter"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:text="@string/mainActionbar_rewardChannel"
+		style="@style/Actionbar_CenterTitle"/>
+	
+
+	<TextView
+		android:id="@+id/MainActionbar_tvRight"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_centerVertical="true"
+		android:text="@string/mainActionbar_appdownloads"
+		style="@style/Actionbar_SubTitle"
+		android:layout_marginRight="5dip"
+		android:layout_alignParentRight="true"/>
+	<ImageView 
+		android:id="@+id/MainActionbar_imgUserProfile"
+		android:layout_width="42dip"
+		android:layout_height="42dip"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="3dip"
+		android:src="@drawable/userprofile_nopic_default_big"/>
+</RelativeLayout>

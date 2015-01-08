@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/global_activity_bg"
+	android:scrollbars="none" 
+	android:id="@+id/rewardDetail_scrollView">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<com.imusic.rewallet.widgets.RewardDetailVideoPlayer
+			android:id="@+id/rewardDetail_videoplayer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/rewardDetailactivity_horizontal_margin"
+			android:layout_marginRight="@dimen/rewardDetailactivity_horizontal_margin"
+			android:orientation="vertical" >
+			<RelativeLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_centerInParent="true">
+					<ImageView
+						android:id="@+id/rewardDetail_imgCoin"
+						android:layout_width="30dip"
+						android:layout_height="30dip"
+						android:layout_marginLeft="6dip"
+						android:src="@drawable/rewardchannel_vcoin" />
+					<TextView
+						android:id="@+id/rewardDetail_tvCoinCount"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/global_Text_Title"
+						android:textSize="30sp" />
+				</LinearLayout>
+			</RelativeLayout>
+			
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="30sp"/>
+			<TextView
+				android:id="@+id/rewardDetail_tvMainDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/rewardDetailactivity_Text_margin"
+				android:layout_marginLeft="@dimen/rewardDetailactivity_Text_margin"
+				android:layout_marginRight="@dimen/rewardDetailactivity_Text_margin"
+				android:textColor="@color/global_Text_Title" />
+			
+		</LinearLayout>
+			
+			
+
+			
+	</LinearLayout>
+			
+</ScrollView>

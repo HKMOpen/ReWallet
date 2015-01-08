@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SearchActivity" >
+
+	<com.imusic.rewallet.widgets.SearchBar
+		android:id="@+id/search_searchBar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/searchBar_height"
+		android:layout_alignParentTop="true"
+		/>
+	<FrameLayout 
+		android:id="@+id/search_mainContent"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/search_searchBar"
+		/>
+
+</RelativeLayout>

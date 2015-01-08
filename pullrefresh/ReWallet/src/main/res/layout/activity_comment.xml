@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg"
+	android:scrollbars="none" >
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView 
+		android:id="@+id/comment_tvTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="RewardTitle / App title"
+		android:textColor="@color/global_titleText"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:layout_marginLeft="15dip"
+		android:layout_marginTop="10dip"
+		android:layout_marginBottom="15dip"/>
+	<ImageView 
+		android:id="@+id/comment_imgBanner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="15dip"
+		android:layout_marginLeft="15dip"
+		android:layout_marginRight="15dip"
+		android:layout_marginTop="20dip" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="1dip"
+			android:background="@color/global_bodyTextColor_highLight" />
+		<RelativeLayout 
+			android:id="@+id/comment_layout_userinfo"
+			android:layout_width="match_parent"
+			android:layout_height="120dip"
+			android:layout_marginTop="15dip">
+			<ImageView 
+				android:id="@+id/comment_imgUserIcon"
+				android:layout_width="120dip"
+				android:layout_height="120dip"
+				android:src="@drawable/login_defaultuser_icon"
+				android:scaleType="fitXY"/>
+			<TextView 
+				android:id="@+id/comment_tvUserName"
+				android:layout_width="150dip"
+				android:layout_height="wrap_content"
+				android:background="@drawable/textbox_stroke"
+				android:text="USER Nickname"
+				android:gravity="center"
+				android:padding="15dip"
+				android:layout_alignParentRight="true"
+				android:textSize="13sp"/>
+			<Button 
+				android:id="@+id/comment_btnSubmit"
+				android:layout_width="150dip"
+				android:layout_height="wrap_content"
+				android:background="@drawable/btn_orange_two_border"
+				android:text="@string/shareActivity_submit"
+				android:drawableRight="@drawable/share_submit"
+				android:paddingRight="12dip"
+				android:paddingLeft="12dip"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:textColor="@color/global_bodyTextColor_highLight"
+				android:textSize="13sp"
+				android:textStyle="bold"/>
+		</RelativeLayout>
+		<EditText 
+			android:id="@+id/comment_edContent"
+			android:layout_below="@id/comment_layout_userinfo"
+			android:layout_width="match_parent"
+			android:layout_height="200dip"
+			android:background="@drawable/share_comment_bg"
+			android:paddingTop="40dip"
+			android:paddingLeft="20dip"
+			android:paddingRight="20dip"
+			android:paddingBottom="20dip"
+			android:gravity="top"
+			android:layout_marginTop="5dip"
+			/>
+	</RelativeLayout>
+	<LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dip"
+		android:layout_marginRight="15dip"
+		android:layout_marginBottom="20dip"
+		android:orientation="vertical"
+		android:background="@drawable/textbox_stroke">
+		<com.imusic.rewallet.widgets.RewardDetailCommentListView
+			android:id="@+id/comment_lvComments"
+			android:scrollbars="none"
+			android:layout_marginTop="20dip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

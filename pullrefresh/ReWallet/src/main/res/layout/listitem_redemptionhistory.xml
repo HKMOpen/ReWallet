@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/global_activity_bg"
+		android:orientation="horizontal"
+		 >
+
+		<RelativeLayout 
+			android:layout_width="90dip"
+			android:layout_height="90dip"
+			android:padding="10dip"
+			android:background="@color/appList_listitem_left_bg">
+			<ImageView
+				android:id="@+id/redemptionHistoryListItem_imgIcon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/redemptionhistory_icon" />
+			<com.imusic.rewallet.widgets.InclineTextView
+				android:id="@+id/redemptionHistoryListItem_tvCliamed"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="@string/redemptionHistoryActivity_TAB_Claimed"
+				android:background="#00000000"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="18sp"
+				android:visibility="gone"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="5dip"
+			android:orientation="vertical"
+			android:paddingBottom="10dip"
+			android:paddingTop="10dip" 
+			android:paddingLeft="5dip"
+			android:background="@color/appList_listitem_right_bg">
+
+			<TextView
+				android:id="@+id/redemptionHistoryListItem_tvName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="14sp"
+				android:textStyle="bold" />
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" >
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:orientation="vertical" >
+
+					<TextView
+						android:id="@+id/redemptionHistoryListItem_tvVendor"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:text="Provider"
+						android:textColor="@color/global_Text_Title"
+						android:textSize="8sp"
+						android:textStyle="italic" />
+
+					<TextView
+						android:id="@+id/redemptionHistoryListItem_tvExpDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:text="exp.Date yyyy/MM/dd"
+						android:textColor="@color/global_Text_SubTitle"
+						android:textSize="8sp" />
+				</LinearLayout>
+
+				<ImageView
+					android:id="@+id/redemptionHistoryListItem_imgCoin"
+					android:layout_width="25dip"
+					android:layout_height="25dip"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="5dip"
+					android:layout_marginRight="3dip"
+					android:src="@drawable/rewardchannel_vcoin" />
+
+				<TextView
+					android:id="@+id/redemptionHistoryListItem_tvCoinCount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@id/redemptionHistoryListItem_imgCoin"
+					android:text="20"
+					android:textStyle="bold"
+					android:textColor="@color/global_Text_Title"
+					android:textSize="18sp" />
+<!-- 
+				<TextView
+					android:id="@+id/redemptionHistoryListItem_tvCountryDesc"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="10dip"
+					android:layout_toLeftOf="@id/redemptionHistoryListItem_tvCoinCount"
+					android:text="HKG"
+					android:textColor="@color/global_bodyTextColor_highLight"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+
+				<ImageView
+					android:id="@+id/redemptionHistoryListItem_imgCategory"
+					android:layout_width="28dip"
+					android:layout_height="28dip"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dip"
+					android:layout_toLeftOf="@id/redemptionHistoryListItem_tvCountryDesc"
+					android:src="@drawable/category_default" />
+					 -->
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/redemptionHistoryListItem_tvDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:singleLine="true"
+				android:text="description"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="14sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/redemptionHistoryListItem_layout_processing"
+		android:layout_width="match_parent"
+		android:layout_height="90dip"
+		android:background="#70ffffff" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="60dip"
+			android:layout_centerVertical="true"
+			android:text="@string/global_processing"
+			android:textColor="@color/global_Text_SubTitle"
+			android:textSize="14sp"
+			android:textStyle="italic" />
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".RegisterActivity" >
+
+	<LinearLayout 
+		android:id="@+id/register_layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/login_bottombar_height"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone">
+		<Button 
+			android:id="@+id/register_btnOK"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/instructionsActivity_ok"
+			android:background="@color/global_bottomMenu_bg"
+			android:textColor="@color/global_Text_Title"/>
+	</LinearLayout>
+	<WebView 
+		android:id="@+id/register_webView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/register_layout_bottom"/>
+
+</RelativeLayout>

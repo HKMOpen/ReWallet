@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".RedemptionActivity" >
+	
+	<LinearLayout 
+		android:id="@+id/redemption_layout_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:gravity="center_horizontal">
+		<Button 
+		android:id="@+id/redemption_btnAccept"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/login_bottombar_height"
+		android:text="@string/redemptionActivity_Accept"
+		android:textColor="@color/global_Text_Title"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:background="@color/global_bottomMenu_bg"/>
+		
+	</LinearLayout>
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/global_activity_bg"
+		android:layout_above="@id/redemption_layout_bottom"
+		android:scrollbars="none">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<TextView
+				android:id="@+id/redemption_tvRewardTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dip"
+				android:layout_marginLeft="15dip"
+				android:layout_marginRight="15dip"
+				android:layout_marginTop="10dip"
+				android:singleLine="true"
+				android:text="Reward Title"
+				android:textColor="@color/global_Text_Title"
+				android:textSize="20sp"
+				android:textStyle="bold" />
+			<ImageView
+				android:id="@+id/redemption_imgPic"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:scaleType="fitXY"/>
+			<RelativeLayout
+				android:id="@+id/redemptionActivity_layout_vendor"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/rewardDetailactivity_Text_margin"
+				android:layout_marginRight="@dimen/rewardDetailactivity_Text_margin"
+				android:layout_marginTop="10dip" >
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:orientation="vertical" >
+
+					<TextView
+						android:id="@+id/redemptionActivity_tvVendor"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/global_Text_Title"
+						android:textStyle="italic" />
+
+					<TextView
+						android:id="@+id/redemptionActivity_tvExpDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/global_Text_SubTitle" />
+				</LinearLayout>
+
+				<ImageView
+					android:id="@+id/redemptionActivity_imgCoin"
+					android:layout_width="30dip"
+					android:layout_height="30dip"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="6dip"
+					android:src="@drawable/rewardchannel_vcoin" />
+
+				<TextView
+					android:id="@+id/redemptionActivity_tvCoinCount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@id/redemptionActivity_imgCoin"
+					android:textColor="@color/global_Text_Title"
+					android:textSize="20sp" />
+				<!-- 
+				<TextView
+					android:id="@+id/redemptionActivity_tvCountryDesc"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="13dip"
+					android:layout_toLeftOf="@id/redemptionActivity_tvCoinCount"
+					android:textColor="@color/global_bodyTextColor_highLight"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+				<ImageView 
+					android:id="@+id/redemptionActivity_imgCategory"
+					android:layout_width="32dip"
+					android:layout_height="32dip"
+					android:layout_marginRight="10dip"
+					android:layout_centerVertical="true"
+					android:src="@drawable/category_default"
+					android:layout_toLeftOf="@id/redemptionActivity_tvCountryDesc"/>
+					 -->
+			</RelativeLayout>
+			<include 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dip"
+				android:layout_marginRight="20dip"
+				layout="@layout/view_cutline" />
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:layout_marginBottom="10dip"
+				>
+				
+				<TextView 
+					android:id="@+id/redemption_tvConditions"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/redemptionActivity_Terms"
+					android:textColor="@color/global_Text_Title"
+					android:textSize="14sp"
+					android:layout_marginLeft="11dip"
+					android:layout_marginRight="11dip"/>
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+	
+</RelativeLayout>

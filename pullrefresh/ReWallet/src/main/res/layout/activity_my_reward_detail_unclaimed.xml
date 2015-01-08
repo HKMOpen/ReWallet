@@ -1,0 +1,214 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/global_activity_bg"
+	android:scrollbars="none" 
+	android:id="@+id/myRewardDetail_layout">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<ImageView
+				android:id="@+id/myRewardDetail_imgTop"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:scaleType="fitXY" />
+<!-- 
+			<TextView
+				android:id="@+id/myRewardDetail_tvCategory"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dip"
+				android:background="@drawable/label_category"
+				android:text="Category"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold" 
+				android:paddingLeft="3dip"
+					android:paddingTop="5dip"
+					android:paddingBottom="5dip"
+					android:paddingRight="15dip"/>
+
+			<TextView
+				android:id="@+id/myRewardDetail_tvCountry"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/myRewardDetail_tvCategory"
+				android:layout_marginTop="10dip"
+				android:background="@drawable/label_category"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold" 
+				android:paddingLeft="3dip"
+					android:paddingTop="5dip"
+					android:paddingBottom="5dip"
+					android:paddingRight="15dip"/>
+					 -->
+		</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/myRewardDetail_layout_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<RelativeLayout
+				android:id="@+id/myRewardDetail_layout_vendor"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				android:paddingTop="10dip"
+				android:paddingBottom="10dip"
+				>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:orientation="vertical" >
+
+					<TextView
+						android:id="@+id/myRewardDetail_tvVendor"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/global_Text_Title"
+						android:textStyle="italic" />
+
+					<TextView
+						android:id="@+id/myRewardDetail_tvExpDate"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/global_Text_SubTitle" />
+				</LinearLayout>
+
+				<ImageView
+					android:id="@+id/myRewardDetail_imgCoin"
+					android:layout_width="30dip"
+					android:layout_height="30dip"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="5dip"
+					android:src="@drawable/rewardchannel_vcoin" />
+
+				<TextView
+					android:id="@+id/myRewardDetail_tvCoinCount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@id/myRewardDetail_imgCoin"
+					android:textColor="@color/global_Text_Title"
+					android:textSize="20sp" />
+<!-- 
+				<TextView
+					android:id="@+id/myRewardDetail_tvCountryDesc"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="10dip"
+					android:layout_toLeftOf="@id/myRewardDetail_tvCoinCount"
+					android:textColor="@color/global_bodyTextColor_highLight"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+
+				<ImageView
+					android:id="@+id/myRewardDetail_imgCategory"
+					android:layout_width="32dip"
+					android:layout_height="32dip"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="5dip"
+					android:layout_toLeftOf="@id/myRewardDetail_tvCountryDesc"
+					android:src="@drawable/category_default" />
+ -->
+			</RelativeLayout>
+		    <LinearLayout 
+					android:layout_width="match_parent"
+					android:layout_height="2dip"
+					android:layout_marginLeft="15dip"
+					android:layout_marginRight="15dip"
+					android:background="@color/global_cutline_bg"/>
+			
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="12dip"
+				android:layout_marginTop="12dip"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				android:orientation="horizontal" >
+
+				<com.imusic.rewallet.widgets.BtnReversalHighlight
+					android:id="@+id/myRewardDetail_btnShare"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" 
+					android:visibility="gone"/>
+				<LinearLayout 
+					android:layout_width="20dip"
+					android:layout_height="wrap_content"
+					android:visibility="gone"/>
+
+				<com.imusic.rewallet.widgets.BtnReversalHighlight
+					android:id="@+id/myRewardDetail_btnComment"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" 
+					android:visibility="gone"/>
+			</LinearLayout>
+			<LinearLayout 
+					android:layout_width="match_parent"
+					android:layout_height="2dip"
+					android:layout_marginLeft="15dip"
+					android:layout_marginRight="15dip"
+					android:layout_marginTop="10dip"
+					android:layout_marginBottom="10dip"
+					android:background="@color/global_bodyTextColor_highLight"
+					android:visibility="gone"/>
+			
+			<TextView 
+				android:id="@+id/myRewardDetail_tvMainDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dip"
+				android:layout_marginRight="15dip"
+				android:textColor="@color/global_Text_Title"
+				android:text="@string/global_mainDescription"/>
+
+			<LinearLayout
+				android:id="@+id/myRewardDetail_layout_qrcode"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginBottom="30dip"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dip"
+				android:layout_marginTop="10dip"
+				android:background="#FFFFFF"
+				android:padding="5dip" 
+				android:orientation="vertical">
+
+				<ImageView
+					android:id="@+id/myRewardDetail_imgQrcode"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:src="@drawable/qrcode_default" 
+					android:visibility="gone"/>
+				<ImageButton 
+					android:id="@+id/myRewardDetail_imgBtnScanner"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/qr_scanner"
+					android:background="#00000000"
+					android:visibility="gone"/>
+			</LinearLayout>
+		
+		</LinearLayout>
+	</LinearLayout>
+
+</ScrollView>
